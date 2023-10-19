@@ -22,10 +22,8 @@
     text-transform: uppercase;
 }
 
-.userInput {
-    margin: 0 0 .5rem;
-}
-
-.passInput {
-    margin: 0 0 .5rem;
+.requestLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

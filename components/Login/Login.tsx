@@ -17,12 +17,19 @@ const Login: React.FC = (): ReactElement => {
     return (
         <div className={styles.loginContainer}>
 
-                <input id="email" className={styles.loginInput} type="email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-
-                <input id="password" className={styles.loginInput} type="password" value={password} placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
+                <input className={styles.loginInput} type="email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                <div style={{ ['height' as any]: "16px;" }}></div>
+                <input className={styles.loginInput} type="password" value={password} placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
 
                 <div>
-                    <button type="submit" onClick={handleSubmit}>Login</button>
+                    <button className='loginSubmit' type="submit" onClick={handleSubmit}>Login</button>
+                </div>
+
+                <div className={styles.requestLinks}>
+                    <div style={{ ['height' as any]: "16px;" }}></div>
+                    <a href="#">Create a new account</a>
+                    <div style={{ ['height' as any]: "16px;" }}></div>
+                    <a href="#">Request password reset</a>
                 </div>
         </div>
     )
