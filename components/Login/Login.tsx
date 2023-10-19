@@ -5,18 +5,9 @@ const Login: React.FC = (): ReactElement => {
     return (
         <div className={styles.loginContainer}>
 
-            <div className={styles.loginInput}>
+                <input id="email" className={styles.loginInput} type="email" placeholder='Email' />
 
-                <p className={styles.userInput}>Username</p>
-                <input type="email" />
-                </div>
-
-            <div className={styles.loginInput}>
-
-                <p className={styles.passInput}>Password</p>
-                <input type="password" />
-
-            </div>
+                <input id="password" className={styles.loginInput} type="password" placeholder='Password' />
         </div>
     )
 }
