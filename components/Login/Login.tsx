@@ -7,13 +7,13 @@ const Login: React.FC = (): ReactElement => {
 
             <div className={styles.loginInput}>
 
-                <p className={styles}>Username</p>
+                <p className={styles.userInput}>Username</p>
                 <input type="email" />
                 </div>
 
             <div className={styles.loginInput}>
 
-                <p className={styles}>Password</p>
+                <p className={styles.passInput}>Password</p>
                 <input type="password" />
 
             </div>

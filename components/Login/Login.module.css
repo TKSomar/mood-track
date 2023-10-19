@@ -1,17 +1,35 @@
 .loginContainer {
-    max-width: 800px;
+    background: rgba(51, 170, 51, .75);
+    border: 2px solid black;
+    border-radius: 18.5px;
+    border-style: solid;
+    min-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin: 3rem 0 3rem;
 }
 
 .loginInput {
     display: flex;
+    border-radius: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    padding: 1.5rem 0 1.5rem;
+}
+
+.userInput {
+    text-transform: uppercase;
+    margin: 0 0 .5rem;
+}
+
+.passInput {
+    text-transform: uppercase;
+    margin: 0 0 .5rem;
 }
