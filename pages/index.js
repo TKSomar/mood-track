@@ -25,7 +25,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to MoodTrack!
+          Welcome to MoodTrack
         </h1>
         <Login></Login>
       </main>
