@@ -2,10 +2,12 @@ import React, { ReactElement, useState } from 'react';
 import styles from './Login.module.css';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "../../server/auth/config/firebase";
+import { useRouter } from 'next/router';
 
 const Login: React.FC = (): ReactElement => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -15,11 +17,12 @@ const Login: React.FC = (): ReactElement => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            // ...
+            router.push('/dashboard');
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            alert(errorMessage);
         });
 
         console.log("Email:", email);
