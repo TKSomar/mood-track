@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import styles from './Login.module.css';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import app from "../../server/auth/config/firebase";
 
 const Login: React.FC = (): ReactElement => {
     const [email, setEmail] = useState("");
@@ -9,7 +10,7 @@ const Login: React.FC = (): ReactElement => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const auth = getAuth();
+        const auth = getAuth(app);
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 

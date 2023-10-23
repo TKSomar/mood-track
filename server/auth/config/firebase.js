@@ -23,4 +23,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 // const analytics = getAnalytics(app);
 
-auth.useEmulator("http://127.0.0.1:9099");
+export default app;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Login from '../components/Login/Login';
 import styles from '../styles/Home.module.css';
-import backgroundImage from '../public/images/pexels-cátia-matos-1072179.jpg'
+import backgroundImage from '../public/images/pexels-cátia-matos-1072179.jpg';
 
 export default function Home() {
   return (
