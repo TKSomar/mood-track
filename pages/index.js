@@ -19,8 +19,9 @@ export default function Home() {
       justifyContent: 'center'
     }}>
       <Head>
-        <title>MoodTracker</title>
+        <title>MoodTrack</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="/dist/output.css" rel="stylesheet" />
       </Head>
 
       <main>
